@@ -22,7 +22,7 @@ def get_Courses():
 
 @app.get("/courses/{course_id}")
 def get_a_course(course_id:int):
-    course = course_id - 1
+    course = course_id + 1
     return fakedb(course)
 
 @app.post("/courses")
